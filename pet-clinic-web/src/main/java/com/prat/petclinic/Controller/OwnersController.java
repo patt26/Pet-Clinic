@@ -5,13 +5,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/owners")
 @Controller
 public class OwnersController {
 
    private final OwnerService ownerService;
+
 
     public OwnersController(OwnerService ownerService) {
         this.ownerService = ownerService;

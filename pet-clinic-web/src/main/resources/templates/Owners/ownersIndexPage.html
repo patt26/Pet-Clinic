@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>List of Pet Owners</title>
 </head>
 <body>
-<h1 th:text="'List of Owners'"> </h1>
+<!--/*@thymesVar id="owner" type="com.prat.petclinic.Model.Owner*/-->
+<h1 th:text="'List of Owners'"></h1>
 
 <table>
     <thead>
@@ -17,7 +18,6 @@
     </thead>
     <tbody>
     <tr th:each="owner:${owners}"></tr>
-
     <td th:text="${owner.id}"></td>
     <td th:text="${owner.firstName}"></td>
     <td th:text="${owner.lastName}"></td>
